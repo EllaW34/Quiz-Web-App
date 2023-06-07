@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Quiz Web App</title>
+   <link rel="stylesheet" type="text/css" href="QuizWebApp.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="QuizWebApp.js"></script>
+ </head>
+ <body>
+ <div class="border">
+   <h1>This is a computer science quiz for java.</h1>
+   <p>For this quiz you are going to be answering 5 questions.</p>
+</div>
+   <br>
+<div class="border">
+   <p>
+   System.out.println("Burgers");
+   <br>
+   System.out.print("and");
+   <br>
+   System.out.print("fries");
+   <br>
+   <br>
+   What would the above code print out?
+   </p>
+   <form action="/action_page.php">
+  		<input type="radio" id="q1a1" class="1incorrect" name="q1" value="a1">
+  		<label for="q1a1">
+	(a.
+	<br>
+	Burgers
+	<br>
+	and
+	<br>
+	fries
+	</label>
+		<br><br>
+  		<input type="radio" id="q1a2" class="1correct" name="q1" value="a2">
+  		<label for="q1a2">
+	(b.
+	<br>
+	Burgers
+	<br>
+	and fries
+	</label>
+		<br><br>
+  		<input type="radio" id="q1a3" class="1incorrect" name="q1" value="a3">
+  		<label for="q1a3">
+	(c.
+	<br>
+	Burgers and fries
+	</label>
+		<br><br>
+  		<input type="radio" id="q1a4" class="1incorrect" name="q1" value="a4">
+  		<label for="q1a4">
+	(d.
+	<br>
+	Burgers and
+	<br>
+	fries
+</label>
+   </form>
+   <p id="1soln" class="hidden"></p>
+</div>
+   <br>
+<div class="border">
+   <p>
+   int x = 5;
+   <br>
+   int y = x/2;
+   <br>
+   System.out.println(y);
+   <br><br>
+   What is printed here?
+   </p>
+   <form action="/action_page.php">
+  		<input type="radio" id="q2a1" class="2incorrect" name="q2" value="a1">
+  		<label for="q2a1">
+(a.
+<br>
+2.5
+</label>
+		<br><br>
+  		<input type="radio" id="q2a2" class="2incorrect" name="q2" value="a2">
+  		<label for="q2a2">
+(b.
+<br>
+3
+</label>
+		<br><br>
+  		<input type="radio" id="q2a3" class="2incorrect" name="q2" value="a3">
+  		<label for="q2a3">
+(c.
+<br>
+5
+</label>
+		<br><br>
+  		<input type="radio" id="q2a4" class="2correct" name="q2" value="a4">
+  		<label for="q2a4">
+(d.
+<br>
+2
+</label>
+   </form>
+   <p id="2soln" class="hidden"></p>
+</div>
+   <br>
+<div class="border">
+   <p>
+   int x = 5;
+   <br>
+   x = x + 8;
+   <br><br>
+   What would be an easier way of writing this code yet does the exact same thing?
+   </p>
+   <form action="/action_page.php">
+  		<input type="radio" id="q3a1" class="3correct" name="q3" value="a1">
+  		<label for="q3a1">
+(a.
+<br>
+int x = 5;
+<br>
+x += 8;
+</label>
+		<br><br>
+  		<input type="radio" id="q3a2" class="3incorrect" name="q3" value="a2">
+  		<label for="q3a2">
+(b.
+<br>
+x = 5 + 8;
+</label>
+		<br><br>
+  		<input type="radio" id="q3a3" class="3incorrect" name="q3" value="a3">
+  		<label for="q3a3">
+(c.
+<br>
+int x = 5;
+<br>
+x = 2x;
+</label>
+		<br><br>
+  		<input type="radio" id="q3a4" class="3incorrect" name="q3" value="a4">
+  		<label for="q3a4">
+(d.
+<br>
+int x = 5;
+<br>
+x *= 8;
+</label>
+   </form>
+   <p id="3soln" class="hidden"></p>
+</div>
+   <br>
+<div class="border">
+   <p>
+   System.out.print(Hello);
+   <br>
+   System.out.print(World);
+   <br><br>
+   What is an error in this code?
+   </p>
+   <form action="/action_page.php">
+  		<input type="radio" id="q4a1" class="4incorrect" name="q4" value="a1">
+  		<label for="q4a1">
+(a.
+<br>
+System.out.print() cannot print strings.</label>
+		<br><br>
+  		<input type="radio" id="q4a2" class="4incorrect" name="q4" value="a2">
+  		<label for="q4a2">
+(b.
+<br>
+"Hello" and "World" should be declared and initialized as variables before printing.
+</label>
+		<br><br>
+  		<input type="radio" id="q4a3" class="4correct" name="q4" value="a3">
+  		<label for="q4a3">
+(c.
+<br>
+There are no quotation marks around "Hello" and "World".
+</label>
+		<br><br>
+  		<input type="radio" id="q4a4" class="4incorrect" name="q4" value="a4">
+  		<label for="q4a4">
+(d.
+<br>
+There are no errors in the code.
+</label>
+   </form>
+   <p id="4soln" class="hidden"></p>
+</div>
+   <br>
+<div class="border">
+   <p>Which of the following lines of code can be used to round numbers? Assume that the number is positive.</p>
+   <form action="/action_page.php">
+  		<input type="radio" id="q5a1" class="5incorrect" name="q5" value="a1">
+  		<label for="q5a1">
+(a.
+<br>
+double rounded = num + 0.5;
+</label>
+		<br><br>
+  		<input type="radio" id="q5a2" class="5incorrect" name="q5" value="a2">
+  		<label for="q5a2">
+(b.
+<br>
+int rounded = (int)num;
+</label>
+		<br><br>
+  		<input type="radio" id="q5a3" class="5correct" name="q5" value="a3">
+  		<label for="q5a3">
+(c.
+<br>
+int rounded = (int)(num + 0.5);
+</label>
+		<br><br>
+  		<input type="radio" id="q5a4" class="5incorrect" name="q5" value="a4">
+  		<label for="q5a4">
+(d.
+<br>
+double rounded = num + 1.0;
+</label>
+   </form>
+   <p id="5soln" class="hidden"></p>
+</div>
+   <br>
+   <input id="button" type="button" value="Submit Quiz">
+   <p id="scoreText"></p>
+ </body>
+</html>
